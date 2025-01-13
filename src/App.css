@@ -1,0 +1,106 @@
+:root {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f7f7f7;
+  --primary-text: #333333;
+  --secondary-text: #777777;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.375rem;
+  gap: 6px;
+  box-shadow: 0px 1px 0px 0px #1f23280a;
+  border: 1px solid #d1d9e0;
+  /* background-color: var(--secondary-bg); */
+}
+
+.output-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 14px;
+}
+
+.output-section-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 0.1875rem;
+  background-color: #f6f8fa;
+  text-align: center;
+}
+
+/* 
+.App {
+  text-align: center;
+} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-container {
+    /* flex-direction: column; */
+  }
+}
+
+.app-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 24px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-section {
+  align-items: flex-start;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input[type="number"], input[type="range"] {
+  margin-left: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.input-section input[type="range"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
