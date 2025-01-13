@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./App.css";
+import "../App.css";
 import OutputView from "./OutputView.tsx";
-import { useChargePoints } from "./useChargePoints.ts";
+import { useChargePoints } from "../hooks/useChargePoints.ts";
 
 const ChargePoints = () => {
   const { state, updateInputs, initialState } = useChargePoints();
