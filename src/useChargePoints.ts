@@ -63,9 +63,9 @@ export const useChargePoints = () => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const updateInputs = (field, value) => {
-    dispatch({ type: "UPDATE_INPUTS", payload: { ...state, [field]: value } });
+  const updateInputs = (formValues) => {
+    dispatch({ type: "UPDATE_INPUTS", payload: formValues});
   };
 
-  return { state, updateInputs };
+  return { state, updateInputs, initialState };
 };
